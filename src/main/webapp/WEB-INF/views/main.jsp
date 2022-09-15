@@ -16,6 +16,7 @@
         주소: <input type="text" name="juso"><br>
         <button type="submit">보내기</button>
         <button type="submit" formtarget="_blank">새 창에서 열기</button>
+        ajlksdjflkajsdlf
     </form>
 </body>
 </html>
