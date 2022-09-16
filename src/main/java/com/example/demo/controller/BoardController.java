@@ -23,9 +23,12 @@ public class BoardController {
     }
 
     @PostMapping("/board")
-    public Board save(@RequestBody BoardSaveDto dto){
+    public Board save(BoardSaveDto dto){
         System.out.println("222222222222");
-        return boardRepository.save(dto.toEntity());
+
+        Board boardEntity = boardRepository.save(dto.toEntity());
+
+        return boardEntity;
     }
 
 }
