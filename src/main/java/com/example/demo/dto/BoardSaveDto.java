@@ -16,4 +16,5 @@ public class BoardSaveDto {
         board.setUser(user);
         return board;
     }
+
 }

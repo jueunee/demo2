@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
@@ -7,8 +8,9 @@ import lombok.Data;
 @Document(collection =  "board")
 public class Board {
     @Id
-    private String id;
+    private ObjectId _id;
     private String title;
     private String content;
     private String user;
 }
+
